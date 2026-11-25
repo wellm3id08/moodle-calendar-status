@@ -2,6 +2,10 @@
 
 See which assignments you still need to submit in the Junta de Andalucía Moodle calendar. The extension adds Spanish status labels to assignments and quizzes. Click **✓** in the bottom left to see a summary and upcoming deadlines. Inside the panel, click **↻** to check again.
 
+<p align="center">
+<img src="img/Eg1.png" alt="Example 1" width="299%">
+</p>
+
 ## Install
 
 1. Download and unzip the repository, or clone it.
@@ -12,3 +16,7 @@ See which assignments you still need to submit in the Junta de Andalucía Moodle
 ## How it works
 
 The extension checks assignments by course. When a course overview lacks enough detail, it reads the activity page using your existing Moodle session. It reuses confirmed statuses for up to two minutes in the same tab. Requests stay on your Moodle campus, and the cache stores neither passwords nor grades.
+
+<p align="center">
+<img src="img/Eg2.png" alt="Example 1" width="299%">
+</p>
