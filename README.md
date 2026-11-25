@@ -1,3 +1,10 @@
+[![Release](https://img.shields.io/github/v/release/wellm3id08/moodle-status-extension)](https://github.com/wellm3id08/moodle-status-extension/releases/latest)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Moodle](https://img.shields.io/badge/Moodle-F98012?logo=moodle&logoColor=white)
+![Brave](https://img.shields.io/badge/Brave-FB542B?logo=brave&logoColor=white)
+![Edge](https://img.shields.io/badge/Edge-0078D7)
+![Chrome](https://img.shields.io/badge/Chrome-4285F4?logo=googlechrome&logoColor=white)
+
 # Moodle Calendar Status
 
 See which assignments you still need to submit in the Junta de Andalucía Moodle calendar. The extension adds Spanish status labels to assignments and quizzes. Click **✓** in the bottom left to see a summary and upcoming deadlines. Inside the panel, click **↻** to check again.
