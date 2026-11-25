@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Estado de Entregas",
+  "version": "4.0.2",
+  "description": "Añade estados de entrega al calendario de Moodle y muestra un resumen.",
+  "permissions": [],
+  "host_permissions": [
+    "https://educacionadistancia.juntadeandalucia.es/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://educacionadistancia.juntadeandalucia.es/*"
+      ],
+      "js": ["overview.js", "cache.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Moodle Estado de Entregas"
+  }
+}

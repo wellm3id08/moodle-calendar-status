@@ -1,0 +1,165 @@
+#moodle-status-extension-root,
+#moodle-status-extension-root * { box-sizing: border-box; }
+
+#moodle-status-extension-root {
+  all: initial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+}
+
+#moodle-status-extension-root .mse-fab {
+  position: fixed;
+  left: 22px;
+  bottom: 22px;
+  z-index: 2147483646;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  background: #243f7a;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,.22);
+  cursor: pointer;
+  font: 800 23px/1 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-panel {
+  position: fixed;
+  top: 78px;
+  right: 22px;
+  z-index: 2147483645;
+  width: min(400px, calc(100vw - 44px));
+  max-height: calc(100vh - 110px);
+  overflow: auto;
+  display: none;
+  padding: 16px;
+  border: 1px solid #d9dee9;
+  border-radius: 16px;
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 20px 55px rgba(0,0,0,.20);
+}
+
+#moodle-status-extension-root.mse-open .mse-panel { display: block; }
+
+#moodle-status-extension-root .mse-empty {
+  color: #667085;
+  font: 13px/1.45 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-header-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#moodle-status-extension-root .mse-title {
+  color: #14213d;
+  font: 800 19px/1.2 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-subtitle {
+  margin-top: 3px;
+  color: #7a8394;
+  font: 12px/1.3 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-icon-button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #d7dde8;
+  border-radius: 10px;
+  background: #fff;
+  color: #263f7a;
+  cursor: pointer;
+  font: 700 18px/1 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 15px 0 18px;
+}
+
+#moodle-status-extension-root .mse-stat {
+  padding: 11px;
+  border: 1px solid #e4e8ef;
+  border-radius: 12px;
+  background: #f6f8fb;
+}
+
+#moodle-status-extension-root .mse-stat strong {
+  display: block;
+  color: #15213d;
+  font: 800 21px/1 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-stat span {
+  display: block;
+  margin-top: 5px;
+  color: #687385;
+  font: 12px/1.2 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-section-title {
+  margin-bottom: 8px;
+  color: #24304a;
+  font: 750 13px/1.2 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-upcoming { display: grid; gap: 8px; }
+
+#moodle-status-extension-root .mse-upcoming-item {
+  padding: 11px 12px;
+  border: 1px solid #e2e6ed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+#moodle-status-extension-root .mse-upcoming-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#moodle-status-extension-root .mse-upcoming-name {
+  flex: 1;
+  min-width: 0;
+  color: #1c2941;
+  font: 650 13px/1.35 system-ui, sans-serif;
+}
+
+#moodle-status-extension-root .mse-upcoming-meta {
+  margin-top: 6px;
+  color: #798395;
+  font: 11px/1.2 system-ui, sans-serif;
+}
+
+.mse-status-wrap {
+  display: inline-block;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+.mse-status {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 3px 7px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font: 700 10px/1 system-ui, sans-serif;
+}
+
+.mse-submitted { background: #e7f7ed; color: #197343; border-color: #bfe8cd; }
+.mse-graded { background: #e8eefc; color: #284b93; border-color: #cbd8f8; }
+.mse-missing { background: #fff0ee; color: #a82c20; border-color: #f2c5bf; }
+.mse-pending { background: #fff7dd; color: #8d6700; border-color: #efdca1; }
+
+.mse-offline, .mse-session, .mse-denied, .mse-unavailable, .mse-checking, .mse-unknown { background: #f3f4f6; color: #525b68; border-color: #d8dde4; }
+
+@media (max-width: 700px) {
+  #moodle-status-extension-root .mse-panel { top: 12px; right: 12px; width: calc(100vw - 24px); }
+  #moodle-status-extension-root .mse-fab { left: 14px; bottom: 14px; }
+}
